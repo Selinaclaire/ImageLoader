@@ -1,0 +1,43 @@
+<div>
+  <div style="width: 100%;" class="container" >
+    <div class="row mb-3">
+      <div class="d-flex justify-content-center" ><h2>Image Loader</h2></div>
+    </div>
+    <div class="row mb-3">
+      <label for="imageinput1">Image URL 1</label><br>
+      <input type="text" class="form-control" id="imageinput1" placeholder="Enter the image URL 1">
+    </div>
+    <div></div>
+    <div class="row mb-3">
+      <label for="imageinput2">Image URL 2</label><br>
+      <input type="text" class="form-control" id="imageinput2" placeholder="Enter the image URL 2">
+    </div>
+    <div></div>
+    <div class="row mb-3">
+      <label for="imageinput3">Image URL 3</label><br>
+      <input type="text" class="form-control" id="imageinput3" placeholder="Enter the image URL 3">
+    </div>
+    <div></div>
+    <div class="row">
+    <button (click)="clickEvent()" type="submit" class="btn btn-default btn-primary ">Create</button>
+  </div>
+  </div>
+   <div class="container" >
+    <div class="row mb-3">
+      <div class="d-flex justify-content-center" ><h2>Image List</h2></div>
+    </div>
+    <div class="row mb-3">
+      <div class="col">
+        <img [src]="imageBlobUrl1" style="width: 100px; height: 100px;">
+      </div>
+      <div class="col">
+        <img [src]="imageBlobUrl2" style="width: 100px; height: 100px;">
+      </div>
+      <div class="col">
+        <img [src]="imageBlobUrl3" style="width: 100px; height: 100px;">
+      </div>
+    </div>
+    
+  </div> 
+    
+</div>
